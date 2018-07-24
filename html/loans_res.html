@@ -124,6 +124,7 @@
   textarea {
       resize: none;
   }
+  .bigger { font-size:140%; color:red}
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -151,14 +152,15 @@
 
 <!-- Container Name, ID, and Gauge Prediction -->
 <div id="band" class="container text-center">
-  <h3>Name: John Smith &emsp;&emsp;&emsp; ID: 576229</h3>
+  <h3 style="font-size:28px;">Name: <strong style="font-size:40px;">John Smith</strong> &emsp;&emsp;&emsp; ID: <strong style="font-size:40px;">576229</strong></h3>
   <img src="loan_images/gauge.png" alt="Random Name" width="450" height="230">
-  <p>It is 54% likely that this loan will be Charged Off. The most significant features in this deicion and their contributions to the decision are:</p>
-  <p>13% - total_rec_prncp</p>
-  <p>10% - total_pymnt</p>
-  <p>9% - total_pymnt_inv</p>
-  <p>8% - installment</p>
-  <p>6% - last_pymnt_amnt</p>
+  <p style="font-size:30px;">It is <span class="bigger"><strong>55%</strong></span> likely that this loan will be <span class="bigger"><strong>Charged Off</strong></span></p>
+  <p style="font-size:22px;">The most significant features in this decision and their contributions are:</p>
+  <p style="color:#FF0000; font-size:26px">13% - ann_income</p>
+  <p style="color:#FF5700; font-size:26px">11% - emp_length</p>
+  <p style="color:#FF7B00; font-size:26px">10% - fico_score</p>
+  <p style="color:#FF9E00; font-size:26px">8% - pub_rec</p>
+  <p style="color:#FFC100; font-size:26px">6% - installment</p>
 </div>
 
 <div id="band" class="container text-center bg-1">
